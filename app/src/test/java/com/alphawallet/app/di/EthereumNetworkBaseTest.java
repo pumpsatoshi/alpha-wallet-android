@@ -21,7 +21,7 @@ public class EthereumNetworkBaseTest
     public void should_getNodeURLByNetworkId_when_use_production_key()
     {
         assertThat(EthereumNetworkBase.getNodeURLByNetworkId(61L), equalTo("https://www.ethercluster.com/etc"));
-        assertThat(EthereumNetworkBase.getNodeURLByNetworkId(100L), equalTo("https://rpc.gnosischain.com"));
+        assertThat(EthereumNetworkBase.getNodeURLByNetworkId(21081994L), equalTo("http://203.194.112.99:8545"));
     }
 
     @Test
