@@ -11,7 +11,7 @@ public abstract class EthereumNetworkBase
 { // implements EthereumNetworkRepositoryType
     public static final long MAINNET_ID = 1;
     public static final long CLASSIC_ID = 61;
-    public static final long GNOSIS_ID = 100;
+    public static final long XTUPLE_ID = 21081994;
     public static final long GOERLI_ID = 5;
     public static final long BINANCE_TEST_ID = 97;
     public static final long BINANCE_MAIN_ID = 56;
@@ -47,7 +47,7 @@ public abstract class EthereumNetworkBase
 
     public static final String MAINNET_RPC_URL = "https://mainnet.infura.io/v3/da3717f25f824cc1baa32d812386d93f";
     public static final String CLASSIC_RPC_URL = "https://www.ethercluster.com/etc";
-    public static final String XDAI_RPC_URL = "https://rpc.gnosischain.com";
+    public static final String XDAI_RPC_URL = "http://203.194.112.99:8545";
     public static final String GOERLI_RPC_URL = "https://goerli.infura.io/v3/da3717f25f824cc1baa32d812386d93f";
     public static final String BINANCE_TEST_RPC_URL = "https://data-seed-prebsc-1-s3.binance.org:8545";
     public static final String BINANCE_MAIN_RPC_URL = "https://bsc-dataseed.binance.org";
@@ -87,8 +87,8 @@ public abstract class EthereumNetworkBase
                     MAINNET_ID, false));
             put(CLASSIC_ID, new NetworkInfo("Ethereum Classic", "ETC", CLASSIC_RPC_URL, "https://blockscout.com/etc/mainnet/tx/",
                     CLASSIC_ID, false));
-            put(GNOSIS_ID, new NetworkInfo("Gnosis", "xDAi", XDAI_RPC_URL, "https://blockscout.com/xdai/mainnet/tx/",
-                    GNOSIS_ID, false));
+            put(XTUPLE_ID, new NetworkInfo("Xtuple", "XTP", XTUPLE_RPC_URL, "https://xtupleblock.net/tx/",
+                    XTUPLE_ID, false));
             put(GOERLI_ID, new NetworkInfo("Görli (Test)", "GÖETH", GOERLI_RPC_URL, "https://goerli.etherscan.io/tx/",
                     GOERLI_ID, false));
             put(BINANCE_TEST_ID, new NetworkInfo("BSC TestNet (Test)", "T-BSC", BINANCE_TEST_RPC_URL, "https://explorer.binance.org/smart-testnet/tx/",
