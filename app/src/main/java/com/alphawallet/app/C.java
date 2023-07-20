@@ -22,7 +22,7 @@ public abstract class C {
 
     public static final String ETHEREUM_NETWORK_NAME = "Ethereum";
     public static final String CLASSIC_NETWORK_NAME = "Ethereum Classic";
-    public static final String XDAI_NETWORK_NAME = "Gnosis";
+    public static final String XTUPLE_NETWORK_NAME = "Xtuple";
     public static final String GOERLI_NETWORK_NAME = "Görli (Test)";
     public static final String BINANCE_TEST_NETWORK = "BSC TestNet";
     public static final String BINANCE_MAIN_NETWORK = "Binance (BSC)";
@@ -57,14 +57,14 @@ public abstract class C {
 
     public static final String ETHEREUM_TICKER_NAME = "ethereum";
     public static final String CLASSIC_TICKER_NAME = "ethereum-classic";
-    public static final String XDAI_TICKER_NAME = "dai";
+    public static final String XTUPLE_TICKER_NAME = "XTP";
     public static final String BINANCE_TICKER = "binance";
 
     public static final String ETHEREUM_TICKER = "ethereum";
 
     public static final String USD_SYMBOL = "$";
     public static final String ETH_SYMBOL = "ETH";
-    public static final String xDAI_SYMBOL = "xDai";
+    public static final String XTUPLE_SYMBOL = "XTP";
     public static final String ETC_SYMBOL = "ETC";
     public static final String GOERLI_SYMBOL = "GÖETH";
     public static final String BINANCE_SYMBOL = "BNB";
