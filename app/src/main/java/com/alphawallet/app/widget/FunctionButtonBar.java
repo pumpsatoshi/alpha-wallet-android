@@ -3,7 +3,7 @@ package com.alphawallet.app.widget;
 import static android.os.VibrationEffect.DEFAULT_AMPLITUDE;
 import static com.alphawallet.ethereum.EthereumNetworkBase.ARBITRUM_MAIN_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.BINANCE_MAIN_ID;
-import static com.alphawallet.ethereum.EthereumNetworkBase.GNOSIS_ID;
+import static com.alphawallet.ethereum.EthereumNetworkBase.XTUPLE_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.MAINNET_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.OPTIMISTIC_MAIN_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.POLYGON_ID;
@@ -755,7 +755,7 @@ public class FunctionButtonBar extends LinearLayout implements AdapterView.OnIte
     private void addBuyFunction()
     {
         if (token.tokenInfo.chainId == MAINNET_ID
-                || token.tokenInfo.chainId == GNOSIS_ID)
+                || token.tokenInfo.chainId == XTUPLE_ID)
         {
             addPurchaseVerb(token, onRampRepository);
         }
