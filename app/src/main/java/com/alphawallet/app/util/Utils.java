@@ -4,7 +4,7 @@ import static com.alphawallet.app.service.AssetDefinitionService.getEASContract;
 import static com.alphawallet.ethereum.EthereumNetworkBase.AVALANCHE_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.BINANCE_MAIN_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.CLASSIC_ID;
-import static com.alphawallet.ethereum.EthereumNetworkBase.GNOSIS_ID;
+import static com.alphawallet.ethereum.EthereumNetworkBase.XTUPLE_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.MAINNET_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.OPTIMISTIC_MAIN_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.POLYGON_ID;
@@ -866,7 +866,7 @@ public class Utils
     {
         {
             put(CLASSIC_ID, "classic");
-            put(GNOSIS_ID, "xdai");
+            put(XTUPLE_ID, "xtuple");
             put(BINANCE_MAIN_ID, "smartchain");
             put(AVALANCHE_ID, "avalanche");
             put(OPTIMISTIC_MAIN_ID, "optimism");
