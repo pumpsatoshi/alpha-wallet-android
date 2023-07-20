@@ -1,6 +1,6 @@
 package com.alphawallet.app.repository;
 
-import static com.alphawallet.ethereum.EthereumNetworkBase.GNOSIS_ID;
+import static com.alphawallet.ethereum.EthereumNetworkBase.XTUPLE_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.MAINNET_ID;
 
 import android.content.Context;
@@ -66,11 +66,11 @@ public class EthereumNetworkRepository extends EthereumNetworkBase
                 popularTokens.put(unknownToken.address.toLowerCase(), new ContractLocator(unknownToken.address, MAINNET_ID));
             }
         }
-        if (networkFilters == null || networkFilters.contains(GNOSIS_ID))
+        if (networkFilters == null || networkFilters.contains(XTUPLE_ID))
         {
             for (UnknownToken unknownToken: knownContract.getXDAI())
             {
-                popularTokens.put(unknownToken.address.toLowerCase(), new ContractLocator(unknownToken.address, GNOSIS_ID));
+                popularTokens.put(unknownToken.address.toLowerCase(), new ContractLocator(unknownToken.address, XTUPLE_ID));
             }
         }
     }
