@@ -6,7 +6,7 @@ import com.alphawallet.ethereum.NetworkInfo;
 import static com.alphawallet.ethereum.EthereumNetworkBase.CLASSIC_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.GOERLI_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.MAINNET_ID;
-import static com.alphawallet.ethereum.EthereumNetworkBase.GNOSIS_ID;
+import static com.alphawallet.ethereum.EthereumNetworkBase.XTUPLE_ID;
 
 /**
  * Created by James on 2/03/2019.
@@ -19,7 +19,7 @@ public class MagicLinkInfo
     private static final String legacyMagicLinkDomain = "app.awallet.io";
     private static final String classicMagicLinkDomain = "classic.aw.app";
     private static final String callistoMagicLinkDomain = "callisto.aw.app";
-    private static final String xDaiMagicLinkDomain = "xdai.aw.app";
+    private static final String xtupleMagicLinkDomain = "xtuple.aw.app";
     private static final String goerliMagicLinkDomain = "goerli.aw.app";
     private static final String customMagicLinkDomain = "custom.aw.app";
 
@@ -27,7 +27,7 @@ public class MagicLinkInfo
     private static final String mainNetEtherscan = "https://cn.etherscan.com/";
     private static final String classicEtherscan = "https://blockscout.com/etc/mainnet/";
     private static final String callistoEtherscan = "https://etherscan.io/"; //TODO: determine callisto etherscan
-    private static final String xDaiEtherscan = "https://blockscout.com/poa/dai/";
+    private static final String xtupleEtherscan = "https://etherscan.io/";
     private static final String goerliEtherscan = "https://goerli.etherscan.io/";
 
     public static String getNetworkNameById(long networkId) {
@@ -51,8 +51,8 @@ public class MagicLinkInfo
                 return mainnetMagicLinkDomain;
             case (int)CLASSIC_ID:
                 return classicMagicLinkDomain;
-            case (int) GNOSIS_ID:
-                return xDaiMagicLinkDomain;
+            case (int) XTUPLE_ID:
+                return xtupleMagicLinkDomain;
             case (int)GOERLI_ID:
                 return goerliMagicLinkDomain;
         }
@@ -69,8 +69,8 @@ public class MagicLinkInfo
                 return MAINNET_ID;
             case classicMagicLinkDomain:
                 return CLASSIC_ID;
-            case xDaiMagicLinkDomain:
-                return GNOSIS_ID;
+            case xtupleMagicLinkDomain:
+                return XTUPLE_ID;
             case goerliMagicLinkDomain:
                 return GOERLI_ID;
         }
@@ -84,8 +84,8 @@ public class MagicLinkInfo
                 return mainNetEtherscan;
             case (int)CLASSIC_ID:
                 return classicEtherscan;
-            case (int) GNOSIS_ID:
-                return xDaiEtherscan;
+            case (int) XTUPLE_ID:
+                return xtupleEtherscan;
             case (int)GOERLI_ID:
                 return goerliEtherscan;
         }
