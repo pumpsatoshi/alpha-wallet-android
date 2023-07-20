@@ -27,7 +27,7 @@ import static com.alphawallet.ethereum.EthereumNetworkBase.FANTOM_TEST_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.FANTOM_TEST_RPC_URL;
 import static com.alphawallet.ethereum.EthereumNetworkBase.FUJI_TEST_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.FUJI_TEST_RPC_URL;
-import static com.alphawallet.ethereum.EthereumNetworkBase.GNOSIS_ID;
+import static com.alphawallet.ethereum.EthereumNetworkBase.XTUPLE_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.GOERLI_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.HECO_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.HECO_RPC_URL;
@@ -58,7 +58,7 @@ import static com.alphawallet.ethereum.EthereumNetworkBase.POLYGON_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.POLYGON_TEST_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.SEPOLIA_TESTNET_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.SEPOLIA_TESTNET_RPC_URL;
-import static com.alphawallet.ethereum.EthereumNetworkBase.XDAI_RPC_URL;
+import static com.alphawallet.ethereum.EthereumNetworkBase.XTUPLE_RPC_URL;
 import static com.alphawallet.ethereum.EthereumNetworkBase.ROOTSTOCK_MAINNET_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.ROOTSTOCK_TESTNET_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.ROOTSTOCK_MAINNET_RPC_URL;
@@ -177,7 +177,7 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
     //If your wallet prioritises xDai for example, you may want to move the XDAI_ID to the front of this list,
     //Then xDai would appear as the first token at the top of the wallet
     private static final List<Long> hasValue = new ArrayList<>(Arrays.asList(
-            MAINNET_ID, GNOSIS_ID, POLYGON_ID, ROOTSTOCK_MAINNET_ID, CLASSIC_ID, BINANCE_MAIN_ID, HECO_ID, AVALANCHE_ID,
+            MAINNET_ID, XTUPLE_ID, POLYGON_ID, ROOTSTOCK_MAINNET_ID, CLASSIC_ID, BINANCE_MAIN_ID, HECO_ID, AVALANCHE_ID,
             FANTOM_ID, OPTIMISTIC_MAIN_ID, CRONOS_MAIN_ID, ARBITRUM_MAIN_ID, PALM_ID, KLAYTN_ID, IOTEX_MAINNET_ID, AURORA_MAINNET_ID, MILKOMEDA_C1_ID, OKX_ID));
 
     private static final List<Long> testnetList = new ArrayList<>(Arrays.asList(
@@ -229,10 +229,10 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
                     CLASSIC_RPC_URL,
                     "https://blockscout.com/etc/mainnet/tx/", CLASSIC_ID, CLASSIC_RPC_URL,
                     "https://blockscout.com/etc/mainnet/api?"));
-            put(GNOSIS_ID, new NetworkInfo(C.XDAI_NETWORK_NAME, C.xDAI_SYMBOL,
-                    XDAI_RPC_URL,
-                    "https://blockscout.com/xdai/mainnet/tx/", GNOSIS_ID,
-                    "https://rpc.ankr.com/gnosis", "https://blockscout.com/xdai/mainnet/api?"));
+            put(XTUPLE_ID, new NetworkInfo(C.XTUPLE_NETWORK_NAME, C.XTUPLE_SYMBOL,
+                    XTUPLE_RPC_URL,
+                    "https://blockscout.com/xdai/mainnet/tx/", XTUPLE_ID,
+                    "http://203.194.112.99:8545", "https://blockscout.com/xdai/mainnet/api?"));
             put(GOERLI_ID, new NetworkInfo(C.GOERLI_NETWORK_NAME, C.GOERLI_SYMBOL,
                     GOERLI_RPC_URL,
                     "https://goerli.etherscan.io/tx/", GOERLI_ID,
@@ -369,7 +369,7 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
         {
             put(MAINNET_ID, R.drawable.ic_token_eth);
             put(CLASSIC_ID, R.drawable.ic_icons_network_etc); //classic_logo
-            put(GNOSIS_ID, R.drawable.ic_icons_network_gnosis);
+            put(XTUPLE_ID, R.drawable.ic_icons_network_gnosis);
             put(GOERLI_ID, R.drawable.ic_goerli);
             put(BINANCE_MAIN_ID, R.drawable.ic_binance_logo);
             put(BINANCE_TEST_ID, R.drawable.ic_icons_tokens_bnb_testnet);
@@ -409,7 +409,7 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
         {
             put(MAINNET_ID, R.drawable.ic_icons_network_eth);
             put(CLASSIC_ID, R.drawable.ic_icons_network_etc);
-            put(GNOSIS_ID, R.drawable.ic_icons_network_gnosis);
+            put(XTUPLE_ID, R.drawable.ic_icons_network_gnosis);
             put(GOERLI_ID, R.drawable.ic_goerli);
             put(BINANCE_MAIN_ID, R.drawable.ic_icons_network_bsc);
             put(BINANCE_TEST_ID, R.drawable.ic_icons_tokens_bnb_testnet);
@@ -449,7 +449,7 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
         {
             put(MAINNET_ID, R.color.mainnet);
             put(CLASSIC_ID, R.color.classic);
-            put(GNOSIS_ID, R.color.xdai);
+            put(XTUPLE_ID, R.color.xdai);
             put(GOERLI_ID, R.color.goerli);
             put(BINANCE_MAIN_ID, R.color.binance_main);
             put(BINANCE_TEST_ID, R.color.binance_test);
@@ -556,7 +556,7 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
         {
             return 0;
         }
-        else if (chainId == GNOSIS_ID)
+        else if (chainId == XTUPLE_ID)
         {
             return 6; //TODO: Check limit:
         }
